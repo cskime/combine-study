@@ -6,6 +6,7 @@
 
 ## Contents
 
-|     |                        Name                        |    Date    |
-| :-: | :------------------------------------------------: | :--------: |
-|  1  | [Chapter1. Hello, Combine!](./01-hello-combine.md) | 2024.04.12 |
+|     |                                 Name                                 |    Date    |
+| :-: | :------------------------------------------------------------------: | :--------: |
+|  1  |          [Chapter1. Hello, Combine!](./01-hello-combine.md)          | 2024.04.12 |
+|  2  | [Chapter2. Publishers & Subscribers](./02-publishers-subscribers.md) | 2024.04.15 |
