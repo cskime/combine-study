@@ -56,7 +56,7 @@ example(of: "Custom Subscriber") {
         
         func receive(_ input: Int) -> Subscribers.Demand {
             print("Received value", input)
-//            return .none
+            //            return .none
             return .max(1)
         }
         
@@ -208,4 +208,35 @@ example(of: "async/await") {
     subject.send(2)
     subject.send(3)
     subject.send(completion: .finished)
+}
+
+example(of: "merge(with:)") {
+    var subscriptions = Set<AnyCancellable>()
+    
+    // 1
+    let publisher1 = PassthroughSubject<Int, Never>()
+    let publisher2 = PassthroughSubject<Int, Never>()
+    
+    // 2
+    publisher1
+        .merge(with: publisher2)
+        .sink(
+            receiveCompletion: { _ in print("Completed") },
+            receiveValue: { print($0) }
+        )
+        .store(in: &subscriptions)
+    
+    // 3
+    publisher1.send(1)
+    publisher1.send(2)
+    
+    publisher2.send(3)
+    
+    publisher1.send(4)
+    
+    publisher2.send(5)
+    
+    // 4
+    publisher1.send(completion: .finished)
+    publisher2.send(completion: .finished)
 }
