@@ -5,16 +5,16 @@
 - The operator manipulates values from the upstream publisher, and emits mainpulated events downstream.
 - An operator is just method that returns a publisher.
 - Collecting values
-  - `collect(_:)`
+  - [`collect(_:)`](#collect)
 - Mapping values
-  - `map(_:)`
-  - `tryMap(_:)`
-  - `flatMap(maxPublisher:_:)`
+  - [`map(_:)`](#map_)
+  - [`tryMap(_:)`](#trymap_)
+  - [`flatMap(maxPublisher:_:)`](#flatmapmaxpublishers_)
 - Replacing upstream output
-  - `replaceNil(with:)`
-  - `replaceEmpty(with:)`
+  - [`replaceNil(with:)`](#replacenilwith)
+  - [`replaceEmpty(with:)`](#replaceemptywith)
 - Incrementally transforming output
-  - `scan(_:_:)`
+  - [`scan(_:_:)`](#scan__)
 - Be careful when working with buffering operators that do not require specifying a count or limit. **They will use an unbounded amount of memory to store received values** as they won't emit before the upstream finishes.
   - `collect()`
   - `flatMap()`

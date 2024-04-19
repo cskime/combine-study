@@ -4,22 +4,22 @@
 
 - Filtering operators limit the values or events emitted by the publisher, and **only consume some of them**.
 - Filtering basics : Filter values that match a provided predicate
-  - `filter(_:)`
-  - `removeDuplicates()`
+  - [`filter(_:)`](#filter_)
+  - [`removeDuplicates()`](#removeduplicates)
 - Compacting and ignoring : Ignore some values
-  - `compactMap(_:)`
-  - `ignoreOutput()`
+  - [`compactMap(_:)`](#compactmap_)
+  - [`ignoreOutput()`](#ignoreoutput)
 - Finding values : Find the first or last values
-  - `first()`, `first(where:)`
-  - `last()`, `last(where:)`
+  - [`first()`, `first(where:)`](#firstwhere)
+  - [`last()`, `last(where:)`](#lastwhere)
 - Dropping values : How many values are ignored before sending values?
-  - `dropFirst(_:)`
-  - `drop(while:)`
-  - `drop(untilOutputFrom:)`
+  - [`dropFirst(_:)`](#dropfirst_)
+  - [`drop(while:)`](#dropwhile)
+  - [`drop(untilOutputFrom:)`](#dropuntiloutputfrom)
 - Limitting values : How many values may emit before completing event?
-  - `prefix(_:)`
-  - `prefix(while:)`
-  - `prefix(untilOutputFrom:)`
+  - [`prefix(_:)`](#prefix_)
+  - [`prefix(while:)`](#prefixwhile)
+  - [`prefix(untilOutputFrom:)`](#prefixuntiloutputfrom)
 - Lazy operators : `first`, `prefix`
 - Greedy operators : `last`
 

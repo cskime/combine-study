@@ -3,12 +3,12 @@
 ## Summary
 
 - Publishers transmit a sequence of values over time to one or more subscribers. (either sync or async)
-  - Use `Just` to receive a single value synchronously and then finishes.
-  - Use `Future` to receive a single value asynchronously at a later time.
+  - Use [`Just`](#just) to receive a single value synchronously and then finishes.
+  - Use [`Future`](#future) to receive a single value asynchronously at a later time.
 - A subscriber can subscribe to a publisher to receive values.
   - There are two built-in operators to subscribe to publishers
-  - `sink(_:_:)`
-  - `assign(to:on:)`
+  - [`sink(_:_:)`](#subscribing-with-sink__)
+  - [`assign(to:on:)`](#subscribing-with-assigntoon)
 - A subscriber may increase the demand for values each time it receives a value(`receive(_:)`), but it cannot decrease demand.
 - To free up resources and prevent unwanted side effects,
   - cancel each subscription when a task is done.

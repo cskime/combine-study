@@ -4,18 +4,18 @@
 
 - Combining operators **combines** events emitted by different publishers and create combinations of data.
 - Prepending : prepends values at the beginning of your publisher and emits original values after prepended publishers has completed.
-  - `prepend(Output...)`
-  - `prepend(Sequence)`
-  - `prepend(Publisher)`
+  - [`prepend(Output...)`](#prependoutput)
+  - [`prepend(Sequence)`](#prependsequence)
+  - [`prepend(Publisher)`](#prependpublisher)
 - Appending : appends values after the original publisher has completed.
-  - `append(Output...)`
-  - `append(Sequence)`
-  - `append(Publisher)`
+  - [`append(Output...)`](#appendoutput)
+  - [`append(Sequence)`](#appendsequence)
+  - [`append(Publisher)`](#appendpublisher)
 - Advanced combining
-  - `switchToLatest()`
-  - `merge(with:)`
-  - `combineLatest(_:)`
-  - `zip(_:)`
+  - [`switchToLatest()`](#switchtolatest)
+  - [`merge(with:)`](#mergewith)
+  - [`combineLatest(_:)`](#combinelatest_)
+  - [`zip(_:)`](#zip_)
 
 ## Prepending
 
