@@ -27,7 +27,7 @@
 
 ## Collecting values
 
-### `collect()`
+### `collect(_:)`
 
 <p align="center"><img src="./images/operator-collect.png" width="500"/></p>
 
@@ -47,7 +47,7 @@
 // finished
 ```
 
-- The `collect()` operator **transforms a stream of individual values from a publisher into a single array**.
+- The `collect(_:)` operator **transforms a stream of individual values from a publisher into a single array**.
 - It **buffers** a stream of individual values **until the upstream publisher completes**, and then emits that array downstream.
 - It can be specified that how many values collects each time.
 
