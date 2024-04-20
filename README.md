@@ -14,3 +14,4 @@
 |  4  |         [Chapter4. Filtering Operators](./04-filtering-operators.md)         | 2024.04.17 |
 |  5  |         [Chapter5. Combining Operators](./05-combining-operators.md)         | 2024.04.18 |
 |  6  | [Chapter6. Time Manipulation Operators](./06-time-manipulation-operators.md) | 2024.04.19 |
+|  7  |          [Chapter7. Sequence Operators](./07-sequence-operators.md)          | 2024.04.20 |
