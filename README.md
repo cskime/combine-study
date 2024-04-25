@@ -15,3 +15,4 @@
 |  5  |         [Chapter5. Combining Operators](./05-combining-operators.md)         | 2024.04.18 |
 |  6  | [Chapter6. Time Manipulation Operators](./06-time-manipulation-operators.md) | 2024.04.19 |
 |  7  |          [Chapter7. Sequence Operators](./07-sequence-operators.md)          | 2024.04.20 |
+|  8  |                  [Chapter9. Networking](./09-networking.md)                  | 2024.04.25 |
